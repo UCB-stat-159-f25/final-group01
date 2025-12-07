@@ -1,0 +1,75 @@
+Alistair Clark
+Input: if __name__ = "main":
+
+base_path = '/home/jovyan/final-group01/data'
+
+
+
+# 1. Call the function for CPI
+
+cpi_df = process_price_index(
+
+    input_file='historicalcpi.csv',
+
+    output_file='processed_cpi.csv',
+
+    item_col_name='Consumer Price Index item',
+
+    base_dir=base_path
+
+)
+
+
+
+# 2. Call the function for PPI
+
+ppi_df = process_price_index(
+
+    input_file='historicalppi.csv',
+
+    output_file='processed_ppi.csv',
+
+    item_col_name='Producer Price Index item',
+
+    base_dir=base_path
+
+)
+
+
+
+fix
+
+Output: 
+
+Here is the corrected code.
+
+The main issues were using a single equals sign (=) instead of double (==) for comparison, and the string needs to be "__main__" (with double underscores), not just "main". I also fixed the indentation so the code runs inside the block.
+
+Python
+
+if __name__ == "__main__":
+    base_path = '/home/jovyan/final-group01/data'
+
+    # 1. Call the function for CPI
+    cpi_df = process_price_index(
+        input_file='historicalcpi.csv',
+        output_file='processed_cpi.csv',
+        item_col_name='Consumer Price Index item',
+        base_dir=base_path
+    )
+
+    # 2. Call the function for PPI
+    ppi_df = process_price_index(
+        input_file='historicalppi.csv',
+        output_file='processed_ppi.csv',
+        item_col_name='Producer Price Index item',
+        base_dir=base_path
+    )
+The Fixes
+Operator: Changed = (assignment) to == (comparison).
+
+Value: Changed "main" to "__main__". Python uses the double underscore pattern for internal names.
+
+Indentation: Indented the logic so it only executes when the script is run directly, not when imported.
+
+Would you like to add a try/except block to this section to handle cases where the input files might be missing?
