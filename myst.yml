@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 9bc42355-cd3b-4ef9-98a7-c74216c7388b
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/UCB-stat-159-f25/final-group01
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
