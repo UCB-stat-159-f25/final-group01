@@ -73,3 +73,44 @@ Value: Changed "main" to "__main__". Python uses the double underscore pattern f
 Indentation: Indented the logic so it only executes when the script is run directly, not when imported.
 
 Would you like to add a try/except block to this section to handle cases where the input files might be missing?
+
+Output:
+
+ls -R
+
+.:
+
+ai-documentation.txt  contribution_statement.md  environment.yml  myst.yml                Q2.ipynb   utils/
+
+cleanData.py          data/                      Makefile         project-description.md  README.md
+
+
+
+./data:
+
+preprocessed/  processed/
+
+
+
+./data/preprocessed:
+
+CPIForecast.csv  CPIHistoricalForecast.csv  historicalcpi.csv  historicalppi.csv  PPIForecast.csv  PPIHistoricalForecast.csv
+
+
+
+./data/processed:
+
+processed_cpi.csv  processed_ppi.csv
+
+
+
+./utils:
+
+testdata.py
+
+(main)jupyter-alist
+
+
+
+how should i structure this project
+
