@@ -61,13 +61,13 @@ https://ucb-stat-159-f25.github.io/final-group01/
 ## Repository Structure
 
 ```bash
-ai-documentation.txt               # Documentation related to AI/automated analysis
+ai-documentation.txt               # Documentation related to AI usage
 contribution_statement.md          # Contribution statement
 environment.yml                    # Conda environment configuration
 LICENSE                            # BSD 3-Clause License
 Makefile                           # Build automation
 myst.yml                           # MyST configuration
-main.ipynb                         # notebook that summarizes and discusses your results
+main.ipynb                         # notebook that summarizes and discusses our results
 notebooks/                         # Jupyter notebooks for analysis
     EDA.ipynb
     food_price_trends_analysis.ipynb
@@ -101,7 +101,10 @@ tests/
     test_transformers.py
     test_analysis.py
     test_process_data.py
+pdf_builds/                         # Jupyter notebooks in PDF
 _build/                             # Built documentation/site
+.github/workflows                   # for MyST GitHub Actions
+logo/                               # a folder to save logo(s)
 README.md                           # This file
 project-description.md              # Project overview and objectives
 ```
