@@ -8,6 +8,7 @@ DATA_PRE := data/preprocessed
 DATA_PROC := data/processed
 FIGURES := figures
 OUTPUTS := outputs
+PDF_BUILDS := pdf_builds
 
 # Processed data targets
 CPI_PROC := $(DATA_PROC)/processed_cpi.csv
@@ -81,6 +82,10 @@ env:
 html:
 	@echo "Caveat: this build can only be viewed locally."
 	myst build --html
+
+.PHONY: pdf
+pdf:
+	myst build --pdf
 
 # =========================
 # Cleanup

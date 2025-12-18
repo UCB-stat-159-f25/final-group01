@@ -58,6 +58,34 @@ project:
         - file: notebooks/healthy_vs_unhealthy_inflation.ipynb
         - file: notebooks/food_inflation_across_major_economic_periods.ipynb
     - file: contribution_statement.md
+
+    # This section defines specific exports
+  exports:
+    # PDF 1
+    - format: pdf
+      article: notebooks/EDA.ipynb
+      output: pdf_builds/EDA.pdf
+      template: plain_latex
+
+    # PDF 2
+    - format: pdf
+      article: notebooks/food_price_trends_analysis.ipynb
+      output: pdf_builds/food_price_trends_analysis.pdf
+      template: plain_latex
+
+    # PDF 3
+    - format: pdf
+      article: notebooks/healthy_vs_unhealthy_inflation.ipynb
+      output: pdf_builds/healthy_vs_unhealthy_inflation.pdf
+      template: plain_latex
+
+    # PDF 4
+    - format: pdf
+      article: notebooks/food_inflation_across_major_economic_periods.ipynb
+      output: pdf_builds/food_inflation_across_major_economic_periods.pdf
+      template: plain_latex
     
 site:
   template: book-theme
+  options:
+    logo: logo/food-inflation.jpg
