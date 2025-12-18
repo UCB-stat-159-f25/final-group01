@@ -69,7 +69,19 @@ site:
 
 .PHONY: env
 env:
-	conda env create -f environment.yml
+	# @ is to omit the command to be shown on the screen
+	# given it's an echo command already, there is no point to show it again
+	@echo "Setting up conda environment..."
+	conda env update -f environment.yml --prune || conda env create -f environment.yml
+
+# =========================
+# Build MyST HTML site
+# =========================
+
+.PHONY: html
+html:
+	@echo "Caveat: this build can only be viewed locally."
+	myst build --html
 
 # =========================
 # Cleanup
