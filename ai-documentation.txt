@@ -114,3 +114,29 @@ testdata.py
 
 how should i structure this project
 
+
+Thomas:
+
+Given the following Makefile + I wish to run preprocess too, how can I have a stable Makefile do everything?
+
+.PHONY: test
+test:
+	pytest utils/tests
+
+.PHONY: site
+site:
+	myst build
+
+.PHONY: env
+env:
+	conda env create -f environment.yml
+
+.PHONY: clean
+clean:
+	rm -f $data/processed/*.csv
+	rm -rf $data/processed/eda_summary
+	rm -rf $data/processed/q1_outputs
+	rm -f $figures/*.png
+	rm -rf _build
+
+

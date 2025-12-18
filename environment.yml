@@ -1,0 +1,19 @@
+name: food_inflation
+channels:
+  - conda-forge
+  - nodefaults
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - statsmodels
+  - jupyter
+  - nbconvert
+  - ipykernel
+  - pytest
+  - mystmd
+  - ruptures
+prefix: /home/jovyan/.local/share/envs/food_inflation

@@ -49,8 +49,8 @@ def process_price_index(input_file, output_file, item_col_name, base_dir):
 
 if __name__ == "__main__":
     base_path = '/home/jovyan/final-group01/data'
-
-	cpi_df = process_price_index(
+    
+    cpi_df = process_price_index(
         input_file='historicalcpi.csv',
         output_file='processed_cpi.csv',
         item_col_name='Consumer Price Index item',
