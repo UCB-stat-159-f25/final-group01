@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/final-group01/HEAD?urlpath=%2Fdoc%2Ftree%2Fmain.ipynb)
 
-[![DOI](https://zenodo.org/badge/1111922548.svg)](https://doi.org/10.5281/zenodo.17972828)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17972829.svg)](https://doi.org/10.5281/zenodo.17972829)
 
 # Food Inflation Analysis Project
 
