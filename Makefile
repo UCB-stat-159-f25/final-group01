@@ -42,10 +42,11 @@ data: $(CPI_PROC) $(PPI_PROC)
 
 .PHONY: figures
 figures: data
-	jupyter nbconvert --to notebook --execute $(NB_EDA) --output EDA.ipynb
-	jupyter nbconvert --to notebook --execute $(NB_TRENDS) --output food_price_trends_analysis.ipynb
-	jupyter nbconvert --to notebook --execute $(NB_HEALTH) --output healthy_vs_unhealthy_inflation.ipynb
-	jupyter nbconvert --to notebook --execute $(NB_ECON) --output food_inflation_across_major_economic_periods.ipynb
+	python -m ipykernel install --user --name=food_inflation --display-name "Python (food_inflation)"
+	jupyter nbconvert --to notebook --execute $(NB_EDA) --output EDA.ipynb --ExecutePreprocessor.kernel_name=food_inflation
+	jupyter nbconvert --to notebook --execute $(NB_TRENDS) --output food_price_trends_analysis.ipynb --ExecutePreprocessor.kernel_name=food_inflation
+	jupyter nbconvert --to notebook --execute $(NB_HEALTH) --output healthy_vs_unhealthy_inflation.ipynb --ExecutePreprocessor.kernel_name=food_inflation
+	jupyter nbconvert --to notebook --execute $(NB_ECON) --output food_inflation_across_major_economic_periods.ipynb --ExecutePreprocessor.kernel_name=food_inflation
 
 # =========================
 # Testing
@@ -69,8 +70,6 @@ site:
 
 .PHONY: env
 env:
-	# @ is to omit the command to be shown on the screen
-	# given it's an echo command already, there is no point to show it again
 	@echo "Setting up conda environment..."
 	conda env update -f environment.yml --prune || conda env create -f environment.yml
 
@@ -90,7 +89,7 @@ html:
 .PHONY: clean
 clean:
 	rm -f $(DATA_PROC)/*.csv
-	rm -rf $(DATA_PROC)/eda_summary
-	rm -rf $(DATA_PROC)/food_price_trend_summary
+	rm -rf $(OUTPUTS)/eda_summary
+	rm -rf $(OUTPUTS)/food_price_trend_summary
 	rm -f $(FIGURES)/*.png
 	rm -rf _build

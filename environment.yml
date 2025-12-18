@@ -5,15 +5,16 @@ channels:
   - defaults
 dependencies:
   - python=3.12
-  - numpy
-  - pandas
-  - matplotlib
-  - scipy
-  - statsmodels
-  - jupyter
-  - nbconvert
-  - ipykernel
-  - pytest
-  - mystmd
-  - ruptures
+  - numpy=2.3
+  - pandas=2.3
+  - seaborn=0.13
+  - matplotlib=3.10
+  - scipy=1.16
+  - statsmodels=0.14
+  - jupyter=1.1
+  - nbconvert=7.16
+  - ipykernel=7.1
+  - pytest=9.0
+  - mystmd=1.7
+  - ruptures=1.1
 prefix: /home/jovyan/.local/share/envs/food_inflation
