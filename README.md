@@ -58,3 +58,12 @@ jupyter lab
 This project uses MyST and a Makefile to generate a site in _build/.
 
 To build the site:
+
+
+## MyST Webpage
+
+https://ucb-stat-159-f25.github.io/final-group01/
+
+## License
+
+This project is licensed under the [BSD 3-Clause License](LICENSE).
