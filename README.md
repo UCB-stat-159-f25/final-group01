@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/sSkqmNLf)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/final-group01/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/final-group01/HEAD?urlpath=%2Fdoc%2Ftree%2Fmain.ipynb)
 
 [![DOI](https://zenodo.org/badge/1111922548.svg)](https://doi.org/10.5281/zenodo.17972828)
 
@@ -67,6 +67,7 @@ environment.yml                    # Conda environment configuration
 LICENSE                            # BSD 3-Clause License
 Makefile                           # Build automation
 myst.yml                           # MyST configuration
+main.ipynb                         # notebook that summarizes and discusses your results
 notebooks/                         # Jupyter notebooks for analysis
     EDA.ipynb
     food_price_trends_analysis.ipynb
