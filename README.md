@@ -60,9 +60,9 @@ https://ucb-stat-159-f25.github.io/final-group01/
 ## Repository Structure
 
 ```bash
-ai-documentation.txt              # Documentation related to AI/automated analysis
-contribution_statement.md         # Contribution statement
-environment.yml                   # Conda environment configuration
+ai-documentation.txt               # Documentation related to AI/automated analysis
+contribution_statement.md          # Contribution statement
+environment.yml                    # Conda environment configuration
 LICENSE                            # BSD 3-Clause License
 Makefile                           # Build automation
 myst.yml                           # MyST configuration
@@ -87,8 +87,18 @@ outputs/                            # Generated outputs (tables, reports)
     eda_summary/
     food_price_trend_summary/
 utils/                              # Utility scripts for data processing or visualization
-    clean_data.py
-    tests/
+    __init__.py
+    data_loader.py
+    transformers.py
+    plotting.py
+    analysis.py
+    process_data.py
+tests/
+    __init__.py
+    test_data_loader.py
+    test_transformers.py
+    test_analysis.py
+    test_process_data.py
 _build/                             # Built documentation/site
 README.md                           # This file
 project-description.md              # Project overview and objectives

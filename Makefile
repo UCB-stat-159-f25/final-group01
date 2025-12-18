@@ -31,8 +31,8 @@ all: data figures site
 # Data processing
 # =========================
 
-$(CPI_PROC) $(PPI_PROC): utils/clean_data.py $(DATA_PRE)/historicalcpi.csv $(DATA_PRE)/historicalppi.csv
-	$(PYTHON) utils/clean_data.py
+$(CPI_PROC) $(PPI_PROC): utils/process_data.py $(DATA_PRE)/historicalcpi.csv $(DATA_PRE)/historicalppi.csv
+	$(PYTHON) utils/process_data.py
 
 .PHONY: data
 data: $(CPI_PROC) $(PPI_PROC)
@@ -55,7 +55,7 @@ figures: data
 
 .PHONY: test
 test:
-	pytest utils/tests
+	pytest tests
 
 # =========================
 # MyST site

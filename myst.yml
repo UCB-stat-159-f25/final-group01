@@ -88,4 +88,4 @@ project:
 site:
   template: book-theme
   options:
-    logo: logo/food-inflation.jpg
+    logo: logo/food-inflation.png
